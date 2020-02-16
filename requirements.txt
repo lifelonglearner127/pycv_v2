@@ -1,0 +1,11 @@
+entrypoints==0.3
+flake8==3.7.9
+imutils==0.5.3
+joblib==0.14.1
+mccabe==0.6.1
+numpy==1.18.1
+pycodestyle==2.5.0
+-e git+git@github.com:lifelonglearner127/pycv.git@64e96127ad3dc63af9b84f40e409d21218d3a87e#egg=pycv
+pyflakes==2.1.1
+scikit-learn==0.22.1
+scipy==1.4.1
