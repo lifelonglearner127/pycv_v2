@@ -1,6 +1,6 @@
 import argparse
 from imutils import paths
-from pycv.preprocessor import ResizePreProcessor
+from pycv.preprocessors import ResizePreProcessor
 from pycv.datasets import DatasetLoader
 from sklearn.linear_model import SGDClassifier
 from sklearn.model_selection import train_test_split

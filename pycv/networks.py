@@ -1,4 +1,10 @@
 import numpy as np
+from tensorflow.keras import backend as K
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Activation
+from tensorflow.keras.layers import Conv2D
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.layers import Flatten
 
 
 class Perceptron:
@@ -125,3 +131,30 @@ class NeuralNetwork:
         loss = 0.5 * np.sum((predictions - targets) ** 2)
 
         return loss
+
+
+class ShallowNet:
+
+    @staticmethod
+    def build(width, height, depth, classes):
+        """Construct the network architecture
+
+        Key Arguments:
+        width: The width of the input images
+        height: The height of our input images
+        depth: The number of channels in the input image
+        classes: The total number of classes that our network should learn
+        """
+        model = Sequential()
+        input_shape = (height, width, depth)
+
+        if K.image_data_format() == "channels_first":
+            input_shape = (depth, height, width)
+
+        model.add(Conv2D(32, (3, 3), padding="same", input_shape=input_shape))
+        model.add(Activation("relu"))
+        model.add(Flatten())
+        model.add(Dense(classes))
+        model.add(Activation("softmax"))
+
+        return model
