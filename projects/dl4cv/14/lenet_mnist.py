@@ -1,3 +1,6 @@
+# USAGE
+# python lenet_mnist.py
+
 import matplotlib.pyplot as plt
 import numpy as np
 from pycv.networks import LeNet

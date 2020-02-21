@@ -1,3 +1,6 @@
+# USAGE
+# python shallownet.py --dataset ~/datasets/animals
+
 import argparse
 import matplotlib.pyplot as plt
 import numpy as np

@@ -1,3 +1,6 @@
+# USAGE
+# python convolutions.py --image ~/Downloads/1.png
+
 import argparse
 import cv2
 import numpy as np

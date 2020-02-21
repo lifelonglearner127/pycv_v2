@@ -1,3 +1,6 @@
+# USAGE
+# python shallownet_cifar10.py
+
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import classification_report

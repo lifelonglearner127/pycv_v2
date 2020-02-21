@@ -1,3 +1,6 @@
+# USAGE
+# python perceptron.py
+
 import argparse
 import numpy as np
 from pycv.networks import Perceptron

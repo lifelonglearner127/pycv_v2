@@ -1,3 +1,6 @@
+# USAGE
+# python cifar10_monitor.py --output output
+
 import argparse
 import os
 import matplotlib

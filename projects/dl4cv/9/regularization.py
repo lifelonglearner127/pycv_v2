@@ -1,3 +1,6 @@
+# USAGE
+# python regularization.py --dataset ~/datasets/animals
+
 import argparse
 from imutils import paths
 from pycv.preprocessors import ResizePreProcessor

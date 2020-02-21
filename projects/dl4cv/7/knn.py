@@ -1,3 +1,6 @@
+# USAGE
+# python knn.py --dataset ~/datasets/animals
+
 import argparse
 
 from imutils import paths

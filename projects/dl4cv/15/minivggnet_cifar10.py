@@ -1,3 +1,6 @@
+# USAGE
+# python minivggnet_cifar10.py --output with_bn.png
+
 import argparse
 import matplotlib
 import matplotlib.pyplot as plt
