@@ -246,3 +246,16 @@ class MiniVGGNet:
         model.add(Activation("softmax"))
 
         return model
+
+
+class FCHeadNet:
+
+    @staticmethod
+    def build(base_model, classes, D):
+        head_model = base_model.output
+        head_model = Flatten(name="flatten")(head_model)
+        head_model = Dense(D, activation="relu")(head_model)
+        head_model = Dropout(0.5)(head_model)
+
+        head_model = Dense(classes, activation="softmax")(head_model)
+        return head_model
