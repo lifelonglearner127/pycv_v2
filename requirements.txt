@@ -27,13 +27,15 @@ mccabe==0.6.1
 networkx==2.4
 numpy==1.18.1
 oauthlib==3.1.0
+opencv-python==4.2.0.32
 opt-einsum==3.1.0
 Pillow==7.0.0
+progressbar==2.5
 protobuf==3.11.3
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycodestyle==2.5.0
--e git+git@github.com:lifelonglearner127/pycv.git@f93616369412f145cec534e6be6639006fc6c7d5#egg=pycv
+-e git+git@github.com:lifelonglearner127/pycv.git@607df882bbe83dfec299ff81012b13302e021065#egg=pycv
 pydot==1.4.1
 pyflakes==2.1.1
 pyparsing==2.4.6
@@ -47,7 +49,6 @@ scikit-learn==0.22.1
 scipy==1.4.1
 six==1.14.0
 tensorboard==2.1.0
-tensorflow==2.1.0
 tensorflow-estimator==2.1.0
 termcolor==1.1.0
 urllib3==1.25.8
